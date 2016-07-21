@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //dyslexia
     var checkPageButton = document.getElementById('dyslexia');
     checkPageButton.addEventListener('click', function() {
+        alert("########here");
 
     }, false);
 
