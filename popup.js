@@ -14,10 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
         var url = tabs[0].url;
 
         $.get(url, function(my_html) {
-            
+
         }, 'html');
 
-        myWindow.document.write("<p>This window's name is: " + url + "</p>");
+        // myWindow.document.write("<p>This window's name is: " + url + "</p>");
+        myWindow.document.write(my_html);
 
 
     });
