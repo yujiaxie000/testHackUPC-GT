@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    var html = document.documentElement.innerHTML;
+    // var html = document.documentElement.innerHTML;
 
     //dyslexia
     var checkPageButton = document.getElementById('dyslexia');
@@ -11,12 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
     //enlarge
     var enlargeButton = document.getElementById('enlarge');
     enlargeButton.addEventListener('click', function() {
-        var x = document.getElementByTagName('P');
+        // var x = document.getElementByTagName('P');
+        var x = $('p');
         var i;
         for (i = 0; i < x.length; i++) {
             x[i].style.backgroundColor = "red";
         }
-        alert(x);
+        document.getElementByTagName('P').innerHTML = x;
     });
 
     //greyscale
