@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    var html = document.documentElement.innerHTML;
+
     //dyslexia
     var checkPageButton = document.getElementById('dyslexia');
     checkPageButton.addEventListener('click', function() {
@@ -9,7 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
     //enlarge
     var enlargeButton = document.getElementById('enlarge');
     enlargeButton.addEventListener('click', function() {
-
+        var x = document.getElementByTagName('P');
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.backgroundColor = "red";
+        }
     });
 
     //greyscale
