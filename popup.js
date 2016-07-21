@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
         var myWindow = window.open("", "newWin", "width = 200, height = 100");
 
         var url = tabs[0].url;
-        myWindow.document.write("<p>This window's name is: " + url + "</p>");
+
+        var html = $.get(url);
+
+        myWindow.document.write(html);
 
     });
 
