@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     checkPageButton.addEventListener('click', function() {
         var myWindow = window.open("", "newWin", "width = 200, height = 100");
         var html = document.documentElement.innerHTML;
-        myWindow.document.write(html);
+        var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+        myWindow.document.write("<p>This window's name is: " + newURL + "</p>");
 
     }, false);
 
