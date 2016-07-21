@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             x[i].style.backgroundColor = "red";
         }
         document.getElementByTagName('P').innerHTML = x;
-        console.log(x)
+        console.log(6+6);
     }, false);
 
     //greyscale
