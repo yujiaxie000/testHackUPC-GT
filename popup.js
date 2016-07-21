@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var checkPageButton = document.getElementById('dyslexia');
     checkPageButton.addEventListener('click', function() {
 
-    }, false);
+    }, true);
 
     //enlarge
     var enlargeButton = document.getElementById('enlarge');
@@ -21,18 +21,18 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(11);
         document.getElementsByTagName('P').innerHTML = x;
         console.log(6+6);
-    }, false);
+    }, true);
 
     //greyscale
     var greyscaleButton = document.getElementById('greyscale');
     greyscaleButton.addEventListener('click', function() {
 
-    }, false);
+    }, true);
 
     //paraphrase
     var paraphraseButton = document.getElementById('paraphrase');
     paraphraseButton.addEventListener('click', function() {
 
-    }, false);
+    }, true);
 
-}, false);
+}, true);
