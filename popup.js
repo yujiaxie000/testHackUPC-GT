@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         console.log(11)
         myWindow.document.write("<p>This window's name is: " + url + "</p>");
-        myWindow.document.write("<p>This window's name is: " + my_html + "</p>");
+        // myWindow.document.write("<p>This window's name is: " + my_html + "</p>");
 
 
     });
