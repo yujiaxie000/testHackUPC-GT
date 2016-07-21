@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var url = tabs[0].url;
 
-        $.get(url, function(my_html) {
+        // $.get(url, function(my_html) {
 
-        });
+        // });
         console.log(11);
         myWindow.document.write("<p>This window's name is: " + url + "</p>");
         // myWindow.document.write("<p>This window's name is: " + my_html + "</p>");
