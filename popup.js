@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var checkPageButton = document.getElementById('dyslexia');
     checkPageButton.addEventListener('click', function() {
         var myWindow = window.open("", "newWin", "width = 200, height = 100");
-        myWindow.document.write("<p>This window's name is: " + myWindow.name + "</p>");
+        var html = document.documentElement.innerHTML;
+        myWindow.document.write(html);
 
     }, false);
 
