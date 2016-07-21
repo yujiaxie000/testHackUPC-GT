@@ -5,10 +5,17 @@ document.addEventListener('DOMContentLoaded', function() {
     //dyslexia
     var checkPageButton = document.getElementById('dyslexia');
     checkPageButton.addEventListener('click', function() {
+        // var html = document.documentElement.innerHTML;
+        // var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+
+    chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
         var myWindow = window.open("", "newWin", "width = 200, height = 100");
-        var html = document.documentElement.innerHTML;
-        var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
-        myWindow.document.write("<p>This window's name is: " + newURL + "</p>");
+
+        var url = tabs[0].url;
+        myWindow.document.write("<p>This window's name is: " + url + "</p>");
+
+    });
+
 
     }, false);
 
