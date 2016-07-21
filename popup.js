@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(11);
         document.getElementsByTagName('P').innerHTML = x;
         console.log(6+6);
+        alert("there");
     }, true);
 
     //greyscale
