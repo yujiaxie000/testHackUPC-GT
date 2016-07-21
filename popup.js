@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         for (i = 0; i < x.length; i++) {
             x[i].style.backgroundColor = "red";
         }
-        alert(x)
+        alert(x);
     });
 
     //greyscale
