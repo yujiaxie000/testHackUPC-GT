@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var enlargeButton = document.getElementById('enlarge');
     enlargeButton.addEventListener('click', function() {
         // var x = document.getElementByTagName('P');
-        alert("here")
+        alert("here");
         var x = $('p');
         var i;
         for (i = 0; i < x.length; i++) {
