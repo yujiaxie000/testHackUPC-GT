@@ -4,35 +4,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //dyslexia
     var checkPageButton = document.getElementById('dyslexia');
-    checkPageButton.addEventListener('click', function(e) {
+    checkPageButton.addEventListener('click', function() {
 
     }, true);
 
     //enlarge
     var enlargeButton = document.getElementById('enlarge');
-    enlargeButton.addEventListener('click', function(e) {
-        // var x = document.getElementByTagName('P');
+    enlargeButton.addEventListener('click', function() {
+        var x = document.getElementByTagName('P');
         alert("here");
-        var x = $('p');
+        // var x = $('p');
         var i;
         for (i = 0; i < x.length; i++) {
             x[i].style.backgroundColor = "red";
         }
         console.log(11);
-        document.getElementsByTagName('P').innerHTML = x;
         console.log(6+6);
         alert("there");
     }, true);
 
     //greyscale
     var greyscaleButton = document.getElementById('greyscale');
-    greyscaleButton.addEventListener('click', function(e) {
+    greyscaleButton.addEventListener('click', function() {
 
     }, true);
 
     //paraphrase
     var paraphraseButton = document.getElementById('paraphrase');
-    paraphraseButton.addEventListener('click', function(e) {
+    paraphraseButton.addEventListener('click', function() {
 
     }, true);
 
