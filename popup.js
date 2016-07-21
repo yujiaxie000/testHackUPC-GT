@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         for (i = 0; i < x.length; i++) {
             x[i].style.backgroundColor = "red";
         }
+        console.log(11);
         document.getElementByTagName('P').innerHTML = x;
         console.log(6+6);
     }, false);
