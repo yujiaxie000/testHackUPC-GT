@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var html = $.get(url);
 
-        myWindow.document.write("<p>This window's name is: " + html + "</p>");
+        myWindow.document.write("<p>This window's name is: " + html + "</p>" + "<p>This window's name is: " + url + "</p>");
+
 
     });
 
