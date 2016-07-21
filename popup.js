@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
         var myWindow = window.open("", "newWin", "width = 200, height = 100");
 
-        var url = tabs[0].url;
+        var url = tabs.url;
 
         // var html;
 
