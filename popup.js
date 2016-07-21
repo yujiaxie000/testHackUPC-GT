@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //enlarge
     var enlargeButton = document.getElementById('enlarge');
     enlargeButton.addEventListener('click', function() {
-        var x = document.getElementByTagName('P');
+        var x = document.getElementsByTagName('P');
         alert("here");
         // var x = $('p');
         var i;
