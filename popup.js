@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             x[i].style.backgroundColor = "red";
         }
         document.getElementByTagName('P').innerHTML = x;
+        console.log(x)
     });
 
     //greyscale
